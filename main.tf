@@ -10,6 +10,7 @@ terraform {
     bucket = "ggdevopsterraformstate"
     key    = "terraform.tfstate"
     region = "us-east-1"
-
+    dynamodb_table = "ggdevops-terraform-state-lock"
+    encrypt = true
   }
 }
