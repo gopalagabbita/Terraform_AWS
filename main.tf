@@ -7,10 +7,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "ggdevopsterraformstate"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
+    bucket         = "ggdevopsterraformstate"
+    key            = "terraform.tfstate"
+    region         = "us-east-1"
     dynamodb_table = "ggdevops-terraform-state-lock"
-    encrypt = true
+    encrypt        = true
   }
 }
