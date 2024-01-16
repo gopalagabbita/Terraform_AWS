@@ -9,3 +9,4 @@ variable "vpc_owner" {}
 variable "public_subnet1_cidr" {}
 variable "public_subnet2_cidr" {}
 variable "public_subnet3_cidr" {}
+variable "public_subnet4_cidr" {}
