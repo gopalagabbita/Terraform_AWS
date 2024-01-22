@@ -18,3 +18,7 @@ output "subnet4" {
   value = aws_subnet.subnet4-public.id
 
 }
+output "aws_security_group" {
+  value = aws_security_group.allow_all.id
+
+}

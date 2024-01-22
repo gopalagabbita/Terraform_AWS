@@ -7,6 +7,8 @@ resource "aws_vpc" "vpc1" {
     Name        = var.vpc_name
     Owner       = var.vpc_owner
     environment = var.environment
+    project     = local.projectname
+    costcenter  = local.costcenter
   }
 }
 # This Deploys IGW
